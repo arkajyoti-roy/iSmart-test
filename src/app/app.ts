@@ -39,9 +39,27 @@ export class App implements OnInit {
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
-      // Keep loading screen for exactly 1s, then transition for 1s (2s total)
-      setTimeout(() => {
-        // 1. Start crossfade transition
+      // 1. Minimum loader time of 2 seconds
+      const minTimePromise = new Promise(resolve => setTimeout(resolve, 2000));
+      
+      // 2. Preload hero slider images
+      const heroImages = [
+        'slider/sl1.png', 'slider/sl2.png', 'slider/sl3.png', 'slider/sl4.png',
+        'slider/sl5.png', 'slider/sl6.png', 'slider/sl7.png', 'slider/sl8.png'
+      ];
+      
+      const imagePromises = heroImages.map(src => {
+        return new Promise(resolve => {
+          const img = new Image();
+          img.onload = resolve;
+          img.onerror = resolve; // resolve on error to prevent infinite loading
+          img.src = src;
+        });
+      });
+      
+      // Wait for BOTH minimum time and all hero images to load
+      Promise.all([minTimePromise, ...imagePromises]).then(() => {
+        // Start crossfade transition
         this.isFadingOut.set(true);
         
         // Initialize AOS slightly after fade starts
@@ -53,15 +71,14 @@ export class App implements OnInit {
           });
         }, 100);
 
-        // 2. Remove loading screen from DOM after transition finishes (1s)
+        // Remove loading screen from DOM after transition finishes
         setTimeout(() => {
           this.isLoading.set(false);
         }, 1000);
-      }, 1000);
+      });
     } else {
       this.isLoading.set(false);
       this.isFadingOut.set(true);
     }
   }
 }
-
