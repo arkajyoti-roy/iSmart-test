@@ -1,12 +1,32 @@
 <div class="min-h-screen flex flex-col bg-white font-sans text-slate-900 scroll-smooth antialiased selection:bg-brand-primary/30 overflow-x-hidden">
   <!-- Loading Screen -->
   @if (isLoading()) {
-    <div class="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900 transition-opacity duration-500">
-      <div class="animate-pulse">
-        <app-logo theme="light" size="lg" class="drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]"></app-logo>
+    <div [class.opacity-0]="isFadingOut()" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-brand-secondary transition-opacity duration-1000 pointer-events-none">
+      <div class="relative flex flex-col items-center">
+        <!-- Logo with soft breathing animation -->
+        <div class="animate-pulse-soft mb-12">
+          <app-logo theme="dark" size="lg"></app-logo>
+        </div>
+        
+        <!-- Elegant Loading Line -->
+        <div class="w-16 h-[2px] bg-brand-primary/20 rounded-full overflow-hidden relative">
+          <div class="absolute inset-0 bg-brand-primary animate-pulse"></div>
+        </div>
+        
+        <!-- Subtle Typography -->
+        <p class="mt-6 font-sans text-xs font-semibold tracking-[0.4em] text-text-dark/50 uppercase animate-pulse">
+          Loading
+        </p>
       </div>
     </div>
-  } @else {
+  }
+
+  <!-- Main App Content (Cinematic Reveal) -->
+  <div [class.opacity-0]="!isFadingOut()" 
+       [class.scale-[1.02]]="!isFadingOut()"
+       [class.translate-y-8]="!isFadingOut()"
+       [class.blur-[2px]]="!isFadingOut()"
+       class="flex flex-col flex-grow w-full bg-white transition-all duration-1000 ease-out">
   <!-- Navbar -->
   <nav class="fixed w-full z-50 bg-white shadow-lg border-b border-silver transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -149,5 +169,5 @@
       </svg>
     </button>
   }
-  }
+  </div>
 </div>

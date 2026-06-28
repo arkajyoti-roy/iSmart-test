@@ -39,7 +39,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
         if (entries[0].isIntersecting) {
           this.startCounting();
         }
-      }, { threshold: 0.6 });
+      }, { threshold: 0.15 });
       this.observer.observe(this.impactSection.nativeElement);
     }
   }

@@ -1,8 +1,6 @@
+
 <!-- Section 1: Hero -->
-<section
-  id="home"
-  class="relative h-[calc(100vh-80px)] mt-[1px] overflow-hidden bg-slate-900 flex items-center justify-center w-full"
->
+<section id="home" class="relative h-[calc(100vh-80px)] mt-[1px] overflow-hidden bg-slate-900 flex items-center justify-center w-full">
   <!-- Auto Slider Background -->
   <div class="absolute inset-0 z-0 overflow-hidden bg-slate-900">
     <div class="flex w-[800%] h-full animate-[hero-slider_40s_infinite]">
@@ -18,82 +16,82 @@
   </div>
   <div class="absolute bottom-16 left-0 right-0 z-10 w-full text-center px-4">
     <div data-aos="fade-up" data-aos-delay="100">
-      <h1
-        class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight drop-"
-      >
+      <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight drop-shadow-md">
         Empowering<br />The Grassroots
       </h1>
     </div>
   </div>
 </section>
+
 <!-- Intro Banner -->
-<section class="bg-[#f0ede6] text-slate-900 py-20">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
-    <p class="text-xl md:text-2xl leading-relaxed font-medium max-w-5xl mx-auto mb-8">
+<section class="bg-brand-secondary text-slate-900 py-24">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+    <p class="font-sans text-xl md:text-2xl leading-relaxed text-text-dark mb-10">
       Every journey begins with a vision, and every vision deserves the right support to grow. At
-      <strong>iSmart Lifestyle Solutions</strong>, we work at the grassroots—nurturing ideas,
+      <strong class="font-heading text-brand-primary">iSmart Lifestyle Solutions</strong>, we work at the grassroots—nurturing ideas,
       building skills, and enabling opportunities that lead to meaningful change. Our commitment
       lies in creating a future where progress is inclusive, sustainable, and accessible to all.
     </p>
-    <div
-      class="flex flex-col md:flex-row justify-center gap-6 font-bold text-xl text-[#f39c12] drop-"
-    >
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6 font-heading font-bold text-lg md:text-xl text-brand-accent tracking-wide">
       <p>Empowering Lives</p>
-      <p class="hidden md:block">•</p>
+      <div class="hidden md:block w-1.5 h-1.5 rounded-full bg-brand-accent"></div>
       <p>Enabling Enterprises</p>
-      <p class="hidden md:block">•</p>
+      <div class="hidden md:block w-1.5 h-1.5 rounded-full bg-brand-accent"></div>
       <p>Transforming Communities</p>
     </div>
   </div>
 </section>
+
 <!-- Section 2: Who We Are -->
-<section id="about" class="py-20 md:py-20 bg-[#f0ede6]">
+<section id="about" class="py-24 bg-brand-secondary">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
-      <div data-aos="fade-right">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Who we are?</h2>
-        <p class="text-xl text-slate-900 leading-relaxed">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div data-aos="fade-right" class="pr-0 lg:pr-8">
+        <h2 class="font-heading text-4xl lg:text-5xl font-bold text-text-dark mb-8">Who we are</h2>
+        <p class="font-sans text-lg md:text-xl text-text-dark leading-relaxed">
           iSmart Lifestyle Solutions is a forward-thinking organization dedicated to rural
           transformation. Established in 2021 in Tripura, we work at the intersection of
-          <strong>enterprise, agriculture, and technology</strong>—building sustainable livelihoods
+          <strong class="text-brand-primary">enterprise, agriculture, and technology</strong>—building sustainable livelihoods
           and empowering communities.
         </p>
       </div>
-      <div data-aos="fade-left">
+      <div data-aos="fade-left" class="relative">
+        <div class="absolute inset-0 bg-brand-primary/10 rounded-[24px] transform translate-x-4 translate-y-4"></div>
         <img
           src="about/who.png"
           alt="Who we are"
-          class="w-full h-auto rounded-[20px]  aspect-[4/3] object-cover"
+          class="relative w-full h-auto rounded-[24px] aspect-[4/3] object-cover shadow-lg"
         />
       </div>
     </div>
   </div>
 </section>
+
 <!-- Section 3: Our Purpose -->
-<section class="py-20 md:py-20 bg-white">
+<section class="py-24 bg-bg-alternate">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-8 md:gap-16 items-center flex-row-reverse">
-      <div class="order-2 lg:order-1" data-aos="fade-right">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="order-2 lg:order-1 relative" data-aos="fade-right">
         <img
           src="about/purpose.png"
           alt="Our Purpose"
-          class="w-full h-auto rounded-[20px]  aspect-[4/3] object-cover"
+          class="relative w-full h-auto rounded-[24px] aspect-[4/3] object-cover shadow-xl z-10"
         />
+        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-brand-accent/20 rounded-full blur-2xl z-0"></div>
       </div>
       <div class="order-1 lg:order-2" data-aos="fade-left">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-wide">
+        <h2 class="font-heading text-4xl lg:text-5xl font-bold text-text-dark mb-4">
           Our Purpose
         </h2>
-        <h3 class="text-3xl text-brand-primary mb-8">to empower, enable, and transform</h3>
-        <div
-          class="bg-brand-primary text-white shadow-lg p-8 rounded-[20px]"
-        >
-          <p class="mb-4">Our purpose is to create opportunities where they are needed the most.</p>
-          <p class="mb-4">
+        <h3 class="font-heading text-2xl lg:text-3xl text-brand-primary mb-10 font-medium">to empower, enable, and transform</h3>
+        <div class="bg-brand-primary text-white shadow-2xl p-10 rounded-[24px] relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
+          <p class="font-sans text-lg mb-6 leading-relaxed relative z-10">Our purpose is to create opportunities where they are needed the most.</p>
+          <p class="font-sans text-lg mb-6 leading-relaxed relative z-10">
             We strive to empower individuals with the skills, knowledge, and support required to
             build sustainable livelihoods and independent futures.
           </p>
-          <p>
+          <p class="font-sans text-lg leading-relaxed relative z-10">
             By connecting communities to resources, markets, and technology, we aim to turn
             potential into progress.
           </p>
@@ -102,876 +100,675 @@
     </div>
   </div>
 </section>
+
 <!-- Section 4: Vision & Mission -->
-<section class="py-20 md:py-20 bg-[#f0ede6] relative">
+<section class="py-24 bg-surface">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid md:grid-cols-2 gap-8 md:gap-16 mb-20">
+    <div class="grid md:grid-cols-2 gap-10">
       <!-- Vision -->
-      <div class="bg-white p-10 rounded-[20px] shadow-sm border border-slate-200" data-aos="fade-up">
-        <h2 class="text-4xl font-bold text-slate-900 mb-6 tracking-wide">VISION</h2>
-        <p class="text-xl text-slate-900 leading-relaxed">
-          Our vision is to create a future where individuals and communities are empowered through
-          opportunities, innovation, and sustainable growth—enabling them to thrive with confidence,
-          independence, resilience, and equal access to a better quality of life. We envision a
-          society where innovation, entrepreneurship, and collaboration drive lasting social and
-          economic transformation.
+      <div class="bg-surface border border-border-color shadow-sm hover:shadow-xl transition-all duration-300 rounded-[24px] p-10 flex flex-col h-full group" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-14 h-14 rounded-full bg-brand-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+          <svg class="w-7 h-7 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+        </div>
+        <h3 class="font-heading text-2xl font-bold text-brand-primary mb-6 uppercase tracking-wider">Vision</h3>
+        <p class="font-sans text-text-dark text-lg leading-relaxed flex-grow">
+          To build an equitable society where every individual has the opportunity, skills, and
+          resources to thrive, driving sustainable rural development and economic independence.
         </p>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-          <img
-            src="about/vision.png"
-            alt="Vision 1"
-            class="w-full h-auto aspect-video object-cover rounded-[16px]"
-          />
-          <img
-            src="about/vision.png"
-            alt="Vision 2"
-            class="w-full h-auto aspect-video object-cover rounded-[16px]"
-          />
+        <div class="mt-10 grid grid-cols-2 gap-4">
+          <img src="about/vision.png" alt="Vision" class="w-full aspect-[4/3] rounded-[16px] object-cover border border-border-color/50" />
+          <img src="about/vision2.png" alt="Vision 2" class="w-full aspect-[4/3] rounded-[16px] object-cover border border-border-color/50" />
         </div>
       </div>
       <!-- Mission -->
-      <div class="bg-white p-10 rounded-[20px] shadow-sm border border-slate-200" data-aos="fade-up" data-aos-delay="100">
-        <h2 class="text-4xl font-bold text-slate-900 mb-6 tracking-wide">MISSION</h2>
-        <ul class="text-lg text-slate-900 space-y-4 list-disc pl-5">
-          <li>Empower individuals through skills and entrepreneurship.</li>
-          <li>Enable access to finance, resources, and opportunities.</li>
-          <li>Connect communities to markets, technology, and financial inclusion.</li>
-          <li>Promote climate-resilient agriculture and sustainable growth.</li>
-        </ul>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-          <img
-            src="about/mission.png"
-            alt="Mission 1"
-            class="w-full h-auto aspect-video object-cover rounded-[16px]"
-          />
-          <img
-            src="about/mission.png"
-            alt="Mission 2"
-            class="w-full h-auto aspect-video object-cover rounded-[16px]"
-          />
+      <div class="bg-surface border border-border-color shadow-sm hover:shadow-xl transition-all duration-300 rounded-[24px] p-10 flex flex-col h-full group" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-14 h-14 rounded-full bg-brand-accent/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+          <svg class="w-7 h-7 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        <h3 class="font-heading text-2xl font-bold text-brand-accent mb-6 uppercase tracking-wider">Mission</h3>
+        <p class="font-sans text-text-dark text-lg leading-relaxed flex-grow">
+          To implement high-impact, grassroots-level interventions in entrepreneurship, agriculture,
+          skill development, and technology, fostering self-reliance and inclusive growth across
+          marginalized communities.
+        </p>
+        <div class="mt-10 grid grid-cols-2 gap-4">
+          <img src="about/mission.png" alt="Mission" class="w-full aspect-[4/3] rounded-[16px] object-cover border border-border-color/50" />
+          <img src="about/mission2.png" alt="Mission 2" class="w-full aspect-[4/3] rounded-[16px] object-cover border border-border-color/50" />
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <!-- Section 5: The Challenges -->
-<section class="py-20 md:py-20 bg-[#f0ede6]">
+<section class="py-24 bg-brand-secondary">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2
-      class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-12 tracking-wide"
-      data-aos="zoom-in"
-    >
+    <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-text-dark mb-16 tracking-wide" data-aos="zoom-in">
       The Challenges
     </h2>
-    <div class="grid md:grid-cols-3 gap-8 text-left">
-      <div class="bg-white p-8 rounded-[20px] shadow-sm border border-slate-200" data-aos="fade-up" data-aos-delay="100">
-        <p class="text-lg text-slate-900">
+    <div class="grid md:grid-cols-3 gap-8 text-left relative">
+      <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border-color to-transparent hidden md:block -z-10"></div>
+      
+      <div class="bg-surface p-10 rounded-[24px] shadow-sm hover:shadow-xl transition-shadow duration-300 border border-border-color group" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-12 h-12 bg-brand-secondary rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+        </div>
+        <p class="font-sans text-lg text-text-dark leading-relaxed">
           Tripura holds immense potential in entrepreneurship, agriculture, and small businesses.
         </p>
       </div>
-      <div class="bg-white p-8 rounded-[20px] shadow-sm border border-slate-200" data-aos="fade-up" data-aos-delay="200">
-        <p class="text-lg text-slate-900">
+      
+      <div class="bg-surface p-10 rounded-[24px] shadow-sm hover:shadow-xl transition-shadow duration-300 border border-border-color group" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-12 h-12 bg-brand-secondary rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+        </div>
+        <p class="font-sans text-lg text-text-dark leading-relaxed">
           However, many MSMEs and aspiring entrepreneurs still face challenges in accessing skills,
           finance, and markets.
         </p>
       </div>
-      <div class="bg-white p-8 rounded-[20px] shadow-sm border border-slate-200" data-aos="fade-up" data-aos-delay="300">
-        <p class="text-lg text-slate-900 font-bold">
+      
+      <div class="bg-brand-primary p-10 rounded-[24px] shadow-lg hover:shadow-xl transition-shadow duration-300 group text-white" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+        <p class="font-sans text-lg font-medium leading-relaxed">
           iSmart Lifestyle Solutions exists to bridge these gaps—unlocking opportunities and
           enabling sustainable growth.
         </p>
       </div>
     </div>
-    <div class="mt-16 grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="400">
-      <img
-        src="challenges/challenge1.png"
-        alt="Challenge 1"
-        class="w-full h-auto aspect-[4/3] object-cover rounded-[20px]  hover:shadow-lg transition-shadow"
-      />
-      <img
-        src="challenges/challenge2.png"
-        alt="Challenge 2"
-        class="w-full h-auto aspect-[4/3] object-cover rounded-[20px]  hover:shadow-lg transition-shadow"
-      />
-      <img
-        src="challenges/challenge3.png"
-        alt="Challenge 3"
-        class="w-full h-auto aspect-[4/3] object-cover rounded-[20px]  hover:shadow-lg transition-shadow"
-      />
+    
+    <div class="mt-20 grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="400">
+      <div class="overflow-hidden rounded-[24px] shadow-sm hover:shadow-xl transition-all duration-500 group">
+        <img src="challenges/challenge1.png" alt="Challenge 1" class="w-full h-auto aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-[24px] shadow-sm hover:shadow-xl transition-all duration-500 group">
+        <img src="challenges/challenge2.png" alt="Challenge 2" class="w-full h-auto aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-[24px] shadow-sm hover:shadow-xl transition-all duration-500 group">
+        <img src="challenges/challenge3.png" alt="Challenge 3" class="w-full h-auto aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
     </div>
   </div>
 </section>
+
 <!-- Section 6: Our Approach -->
-<section class="py-20 md:py-20 bg-[#f0ede6] relative">
+<section class="py-24 bg-surface relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-64 h-64 bg-brand-secondary rounded-bl-full -z-10 opacity-50"></div>
+  <div class="absolute bottom-0 left-0 w-64 h-64 bg-bg-alternate rounded-tr-full -z-10 opacity-50"></div>
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-wide">
+    <div class="text-center mb-20" data-aos="fade-up">
+      <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-text-dark mb-6 tracking-wide">
         Our Approach
       </h2>
-      <p class="text-xl text-slate-900 max-w-3xl mx-auto">
+      <p class="font-sans text-xl text-text-dark max-w-3xl mx-auto">
         We go beyond delivering standalone services—we design integrated ecosystems that drive
         sustainable growth.
       </p>
     </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
-      <!-- 1 -->
-      <div
-        class="p-6"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
-        <img
-          src="approach/approach2.png"
-          alt="Idea"
-          class="w-full aspect-video object-cover rounded-[20px] mb-6 "
-        />
-        <div class="flex gap-4 items-start">
-          <div
-            class="w-12 h-12 flex-shrink-0 bg-brand-primary text-white shadow-md rounded-full flex items-center justify-center font-bold text-xl "
-          >
-            1
+    
+    <div class="relative w-full">
+      <!-- Connecting Timeline Line -->
+      <div class="hidden md:block absolute left-1/2 -translate-x-1/2 top-12 bottom-12 border-l-[3px] border-dashed border-[#0D5C75] opacity-30 z-0"></div>
+      
+      <div class="space-y-16 relative z-10">
+      <!-- 1: Idea -->
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16" data-aos="fade-up">
+        <div class="w-full md:w-1/2 flex justify-end">
+          <div class="w-full md:w-4/5 text-right bg-brand-secondary p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow relative">
+            <h4 class="font-heading font-bold text-2xl text-text-dark mb-3">Idea</h4>
+            <p class="font-sans text-text-dark">Every journey begins with an idea. We help identify, refine, and shape concepts into viable opportunities.</p>
           </div>
-          <div>
-            <h4 class="font-bold text-2xl text-slate-900 mb-2">Idea</h4>
-            <p class="text-slate-900">
-              Every journey begins with an idea. We help identify, refine, and shape concepts into
-              viable opportunities.
-            </p>
+        </div>
+        <div class="hidden md:flex w-16 h-16 bg-brand-primary text-white rounded-full items-center justify-center font-heading font-bold text-2xl shadow-lg z-10 shrink-0 mx-auto">1</div>
+        <div class="w-full md:w-1/2">
+          <div class="w-full md:w-4/5 overflow-hidden rounded-[24px] shadow-sm">
+            <img src="approach/approach2.png" alt="Idea" class="w-full aspect-video object-cover hover:scale-105 transition-transform duration-700" />
           </div>
         </div>
       </div>
-      <!-- 2 -->
-      <div
-        class="p-6"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <img
-          src="approach/approach3.png"
-          alt="Training"
-          class="w-full aspect-video object-cover rounded-[20px] mb-6 "
-        />
-        <div class="flex gap-4 items-start">
-          <div
-            class="w-12 h-12 flex-shrink-0 bg-brand-primary text-white shadow-md rounded-full flex items-center justify-center font-bold text-xl "
-          >
-            2
+
+      <!-- 2: Training -->
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16" data-aos="fade-up">
+        <div class="w-full md:w-1/2 flex justify-end order-3 md:order-1">
+          <div class="w-full md:w-4/5 overflow-hidden rounded-[24px] shadow-sm">
+            <img src="approach/approach3.png" alt="Training" class="w-full aspect-video object-cover hover:scale-105 transition-transform duration-700" />
           </div>
-          <div>
-            <h4 class="font-bold text-2xl text-slate-900 mb-2">Training</h4>
-            <p class="text-slate-900">
-              We equip individuals with practical skills, knowledge, and business understanding to
-              build a strong foundation.
-            </p>
+        </div>
+        <div class="hidden md:flex w-16 h-16 bg-brand-primary text-white rounded-full items-center justify-center font-heading font-bold text-2xl shadow-lg z-10 shrink-0 mx-auto order-2">2</div>
+        <div class="w-full md:w-1/2 order-1 md:order-3">
+          <div class="w-full md:w-4/5 text-left bg-surface border border-border-color p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow relative">
+            <h4 class="font-heading font-bold text-2xl text-brand-primary mb-3">Training</h4>
+            <p class="font-sans text-text-dark">We equip individuals with practical skills, knowledge, and business understanding to build a strong foundation.</p>
           </div>
         </div>
       </div>
-      <!-- 3 -->
-      <div
-        class="p-6"
-        data-aos="fade-up"
-        data-aos-delay="300"
-      >
-        <img
-          src="approach/approach1.png"
-          alt="Finance"
-          class="w-full aspect-video object-cover rounded-[20px] mb-6 "
-        />
-        <div class="flex gap-4 items-start">
-          <div
-            class="w-12 h-12 flex-shrink-0 bg-brand-primary text-white shadow-md rounded-full flex items-center justify-center font-bold text-xl "
-          >
-            3
+      
+      <!-- 3: Finance -->
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16" data-aos="fade-up">
+        <div class="w-full md:w-1/2 flex justify-end">
+          <div class="w-full md:w-4/5 text-right bg-brand-secondary p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow relative">
+            <h4 class="font-heading font-bold text-2xl text-text-dark mb-3">Finance</h4>
+            <p class="font-sans text-text-dark">We facilitate access to financial resources, guiding individuals through funding options, credit, and investment support.</p>
           </div>
-          <div>
-            <h4 class="font-bold text-2xl text-slate-900 mb-2">Finance</h4>
-            <p class="text-slate-900">
-              We facilitate access to financial resources, guiding individuals through funding
-              options, credit, and investment support.
-            </p>
+        </div>
+        <div class="hidden md:flex w-16 h-16 bg-brand-primary text-white rounded-full items-center justify-center font-heading font-bold text-2xl shadow-lg z-10 shrink-0 mx-auto">3</div>
+        <div class="w-full md:w-1/2">
+          <div class="w-full md:w-4/5 overflow-hidden rounded-[24px] shadow-sm">
+            <img src="approach/approach1.png" alt="Finance" class="w-full aspect-video object-cover hover:scale-105 transition-transform duration-700" />
           </div>
         </div>
       </div>
-      <!-- 4 -->
-      <div
-        class="p-6"
-        data-aos="fade-up"
-        data-aos-delay="400"
-      >
-        <img
-          src="approach/approach6.png"
-          alt="Branding"
-          class="w-full aspect-video object-cover rounded-[20px] mb-6 "
-        />
-        <div class="flex gap-4 items-start">
-          <div
-            class="w-12 h-12 flex-shrink-0 bg-brand-primary text-white shadow-md rounded-full flex items-center justify-center font-bold text-xl "
-          >
-            4
+
+      <!-- 4: Branding -->
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16" data-aos="fade-up">
+        <div class="w-full md:w-1/2 flex justify-end order-3 md:order-1">
+          <div class="w-full md:w-4/5 overflow-hidden rounded-[24px] shadow-sm">
+            <img src="approach/approach6.png" alt="Branding" class="w-full aspect-video object-cover hover:scale-105 transition-transform duration-700" />
           </div>
-          <div>
-            <h4 class="font-bold text-2xl text-slate-900 mb-2">Branding</h4>
-            <p class="text-slate-900">
-              We enhance identity and value through branding, packaging, and positioning—making
-              enterprises stand out in competitive markets.
-            </p>
+        </div>
+        <div class="hidden md:flex w-16 h-16 bg-brand-primary text-white rounded-full items-center justify-center font-heading font-bold text-2xl shadow-lg z-10 shrink-0 mx-auto order-2">4</div>
+        <div class="w-full md:w-1/2 order-1 md:order-3">
+          <div class="w-full md:w-4/5 text-left bg-surface border border-border-color p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow relative">
+            <h4 class="font-heading font-bold text-2xl text-brand-primary mb-3">Branding</h4>
+            <p class="font-sans text-text-dark">We enhance identity and value through branding, packaging, and positioning—making enterprises stand out in competitive markets.</p>
           </div>
         </div>
       </div>
-      <!-- 5 -->
-      <div
-        class="p-6"
-        data-aos="fade-up"
-        data-aos-delay="500"
-      >
-        <img
-          src="approach/approach4.png"
-          alt="Market"
-          class="w-full aspect-video object-cover rounded-[20px] mb-6 "
-        />
-        <div class="flex gap-4 items-start">
-          <div
-            class="w-12 h-12 flex-shrink-0 bg-brand-primary text-white shadow-md rounded-full flex items-center justify-center font-bold text-xl "
-          >
-            5
+
+      <!-- 5: Market -->
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16" data-aos="fade-up">
+        <div class="w-full md:w-1/2 flex justify-end">
+          <div class="w-full md:w-4/5 text-right bg-brand-secondary p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow relative">
+            <h4 class="font-heading font-bold text-2xl text-text-dark mb-3">Market</h4>
+            <p class="font-sans text-text-dark">We connect products and services to the right markets, ensuring visibility, demand, and customer reach.</p>
           </div>
-          <div>
-            <h4 class="font-bold text-2xl text-slate-900 mb-2">Market</h4>
-            <p class="text-slate-900">
-              We connect products and services to the right markets, ensuring visibility, demand,
-              and customer reach.
-            </p>
+        </div>
+        <div class="hidden md:flex w-16 h-16 bg-brand-primary text-white rounded-full items-center justify-center font-heading font-bold text-2xl shadow-lg z-10 shrink-0 mx-auto">5</div>
+        <div class="w-full md:w-1/2">
+          <div class="w-full md:w-4/5 overflow-hidden rounded-[24px] shadow-sm">
+            <img src="approach/approach4.png" alt="Market" class="w-full aspect-video object-cover hover:scale-105 transition-transform duration-700" />
           </div>
         </div>
       </div>
-      <!-- 6 -->
-      <div
-        class="p-6"
-        data-aos="fade-up"
-        data-aos-delay="600"
-      >
-        <img
-          src="approach/approach5.png"
-          alt="Scale"
-          class="w-full aspect-video object-cover rounded-[20px] mb-6 "
-        />
-        <div class="flex gap-4 items-start">
-          <div
-            class="w-12 h-12 flex-shrink-0 bg-brand-primary text-white shadow-md rounded-full flex items-center justify-center font-bold text-xl "
-          >
-            6
+
+      <!-- 6: Scale -->
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16" data-aos="fade-up">
+        <div class="w-full md:w-1/2 flex justify-end order-3 md:order-1">
+          <div class="w-full md:w-4/5 overflow-hidden rounded-[24px] shadow-sm">
+            <img src="approach/approach5.png" alt="Scale" class="w-full aspect-video object-cover hover:scale-105 transition-transform duration-700" />
           </div>
-          <div>
-            <h4 class="font-bold text-2xl text-slate-900 mb-2">Scale</h4>
-            <p class="text-slate-900">
-              We support growth by strengthening operations, improving efficiency, and expanding
-              opportunities for long-term success.
-            </p>
+        </div>
+        <div class="hidden md:flex w-16 h-16 bg-brand-primary text-white rounded-full items-center justify-center font-heading font-bold text-2xl shadow-lg z-10 shrink-0 mx-auto order-2">6</div>
+        <div class="w-full md:w-1/2 order-1 md:order-3">
+          <div class="w-full md:w-4/5 text-left bg-surface border border-border-color p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow relative">
+            <h4 class="font-heading font-bold text-2xl text-brand-primary mb-3">Scale</h4>
+            <p class="font-sans text-text-dark">We support growth by strengthening operations, improving efficiency, and expanding opportunities for long-term success.</p>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </div>
 </section>
-<!-- Section 7: Services Pillars -->
 
-<!-- Section 7: Services -->
+<!-- Section 7: Services (Editorial Layout) -->
+<section id="services" class="py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-24" data-aos="fade-up">
+      <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-8 tracking-tight">Our Services</h2>
+      <p class="font-sans text-xl text-text-dark max-w-3xl mx-auto leading-relaxed">
+        We design and deliver high-impact interventions across multiple sectors to build sustainable livelihoods and inclusive growth.
+      </p>
+    </div>
 
-<!-- Building Entrepreneurs -->
-<section id="services" class="py-20 bg-white">
+    <div class="space-y-24">
+      <!-- 1. Building Entrepreneurs -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div data-aos="fade-right">
+          <div class="w-12 h-1 bg-brand-primary mb-6"></div>
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">Building Entrepreneurs</h2>
+          <p class="font-sans text-xl text-text-dark font-medium mb-4">
+            Through structured Entrepreneurship Development Programs (EDP), we transform ideas into viable businesses.
+          </p>
+          <p class="font-sans text-lg text-text-dark leading-relaxed">
+            From business planning to financial access, we guide every step.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 md:gap-6" data-aos="fade-left">
+          <img src="entrepreneurship/entrepre.png" alt="Building Entrepreneurs 1" class="w-full aspect-[4/5] object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="entrepreneurship/entrepre2.png" alt="Building Entrepreneurs 2" class="w-full aspect-[4/5] object-cover rounded-[20px] shadow-md transform translate-y-6 md:translate-y-8 hover:-translate-y-1 transition-transform duration-300" />
+        </div>
+      </div>
+
+      <!-- 2. Agriculture & Livelihoods -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="order-2 lg:order-1 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6" data-aos="fade-right">
+          <img src="agriculture/agri1.png" alt="Agriculture 1" class="col-span-1 sm:col-span-2 w-full h-56 md:h-64 object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="agriculture/agri2.png" alt="Agriculture 2" class="w-full h-48 md:h-56 object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="agriculture/agri3.png" alt="Agriculture 3" class="w-full h-48 md:h-56 object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+        </div>
+        <div class="order-1 lg:order-2" data-aos="fade-left">
+          <div class="w-12 h-1 bg-brand-accent mb-6"></div>
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">Agriculture & Livelihoods</h2>
+          <p class="font-sans text-lg text-text-dark mb-6 leading-relaxed">
+            We promote modern and sustainable agricultural practices by integrating science, innovation, and local knowledge.
+          </p>
+          <p class="font-sans text-lg text-text-dark leading-relaxed">
+            Through improved techniques, resource optimization, and value-added activities, we enhance productivity, strengthen livelihoods, and create pathways for long-term income generation.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3. Skill & Capacity Building -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center bg-brand-secondary p-8 md:p-12 lg:p-16 rounded-[32px] shadow-sm">
+        <div data-aos="fade-right">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">Skill & Capacity Building</h2>
+          <p class="font-sans text-lg text-text-dark mb-8 leading-relaxed">
+            We strengthen capabilities by equipping individuals with practical skills and industry-relevant knowledge. Through focused training and capacity-building initiatives, we enable people to enhance their livelihoods and build sustainable enterprises.
+          </p>
+          <ul class="font-sans text-lg text-text-dark space-y-4">
+            <li class="flex items-start"><span class="text-brand-primary mr-3 font-bold">✦</span> <p><strong>Handloom & Handicrafts</strong> — Preserving traditional skills</p></li>
+            <li class="flex items-start"><span class="text-brand-primary mr-3 font-bold">✦</span> <p><strong>Bamboo & Artisanal Clusters</strong> — Cluster-based development</p></li>
+            <li class="flex items-start"><span class="text-brand-primary mr-3 font-bold">✦</span> <p><strong>Food Processing</strong> — Enabling value addition</p></li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-2 gap-4 md:gap-6" data-aos="fade-left">
+          <img src="skills/skilled1.png" alt="Skill 1" class="w-full aspect-square object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="skills/skilled2.png" alt="Skill 2" class="w-full aspect-square object-cover rounded-[20px] shadow-md transform translate-y-6 md:translate-y-8 hover:-translate-y-1 transition-transform duration-300" />
+        </div>
+      </div>
+
+      <!-- 4. Digital Inclusion -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="order-2 lg:order-1 grid grid-cols-2 gap-4 md:gap-6" data-aos="fade-right">
+          <img src="digital/digital1.png" alt="Digital 1" class="w-full aspect-square object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="digital/digital2.png" alt="Digital 2" class="w-full aspect-square object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="digital/digital3.png" alt="Digital 3" class="w-full aspect-square object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="digital/digital4.png" alt="Digital 4" class="w-full aspect-square object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+        </div>
+        <div class="order-1 lg:order-2" data-aos="fade-left">
+          <div class="w-12 h-1 bg-brand-primary mb-6"></div>
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">Digital Inclusion</h2>
+          <p class="font-sans text-xl text-text-dark leading-relaxed">
+            We enable individuals and communities to access the digital ecosystem through financial literacy, digital tools, and online platforms—empowering them to connect, grow, and succeed in a rapidly evolving world.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5. Women Empowerment -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center bg-bg-alternate p-8 md:p-12 lg:p-16 rounded-[32px] shadow-sm">
+        <div data-aos="fade-right">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">Women Empowerment</h2>
+          <h3 class="font-heading text-xl text-brand-accent mb-6 font-medium">Women are the heart of transformation and progress</h3>
+          <p class="font-sans text-lg text-text-dark leading-relaxed">
+            We empower women and tribal communities by fostering entrepreneurship, strengthening leadership, and enabling financial independence—creating inclusive opportunities for sustainable growth.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 md:gap-6" data-aos="fade-left">
+          <img src="women/women1.png" alt="Women 1" class="w-full aspect-square object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="women/women2.png" alt="Women 2" class="w-full aspect-square object-cover rounded-[20px] shadow-md transform translate-y-6 md:translate-y-8 hover:-translate-y-1 transition-transform duration-300" />
+        </div>
+      </div>
+
+      <!-- 6. Climate & Sustainability -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="order-2 lg:order-1 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6" data-aos="fade-right">
+          <img src="climate/climate1.png" alt="Climate 1" class="w-full h-48 md:h-56 object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="climate/climate2.png" alt="Climate 2" class="w-full h-48 md:h-56 object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="climate/climate3.png" alt="Climate 3" class="col-span-1 sm:col-span-2 w-full h-56 md:h-64 object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+        </div>
+        <div class="order-1 lg:order-2" data-aos="fade-left">
+          <div class="w-12 h-1 bg-success mb-6"></div>
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">Climate & Sustainability</h2>
+          <p class="font-sans text-lg text-text-dark mb-6 leading-relaxed">
+            We promote eco-friendly practices and green livelihoods by integrating sustainability into development—ensuring progress that respects nature and supports future generations.
+          </p>
+          <div class="border-l-4 border-success pl-4 py-2 bg-success/5 rounded-r-lg">
+            <h3 class="font-heading text-lg text-success font-semibold">Sustainable growth begins with responsible choices.</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Incubation & Support -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center bg-brand-secondary p-8 md:p-12 lg:p-16 rounded-[32px] shadow-sm">
+        <div data-aos="fade-right">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">Incubation & Support</h2>
+          <h3 class="font-heading text-xl text-brand-primary mb-6 font-medium">Every idea deserves the right support to grow.</h3>
+          <p class="font-sans text-lg text-text-dark leading-relaxed">
+            We nurture early-stage enterprises through incubation, mentorship, and access to resources—transforming ideas into scalable and sustainable ventures.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 md:gap-6" data-aos="fade-left">
+          <img src="incubation/incubation1.png" alt="Incubation 1" class="w-full aspect-[4/5] object-cover rounded-[20px] shadow-md hover:-translate-y-1 transition-transform duration-300" />
+          <img src="incubation/incubation2.png" alt="Incubation 2" class="w-full aspect-[4/5] object-cover rounded-[20px] shadow-md transform translate-y-6 md:translate-y-8 hover:-translate-y-1 transition-transform duration-300" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Section 8: Activities & Training -->
+<section class="py-24 bg-[#E9E6DF]">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-wide">Our Services</h2>
-      <p class="text-xl text-slate-900 max-w-3xl mx-auto">We design and deliver high-impact interventions across multiple sectors to build sustainable livelihoods and inclusive growth.</p>
-    </div>
-    <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-      <div data-aos="fade-right">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-wide">Building Entrepreneurs</h2>
-        <p class="text-xl text-slate-900 leading-relaxed font-bold mb-4">
-          Through structured Entrepreneurship Development Programs (EDP), we transform ideas into viable businesses.
-        </p>
-        <p class="text-lg text-slate-900">
-          From business planning to financial access, we guide every step.
-        </p>
-      </div>
-      <div data-aos="fade-left" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <img src="entrepreneurship/entrepre.png" alt="Building Entrepreneurs 1" class="w-full h-full object-cover rounded-[20px] aspect-[4/3]" />
-        <img src="entrepreneurship/entrepre2.png" alt="Building Entrepreneurs 2" class="w-full h-full object-cover rounded-[20px] aspect-[4/3]" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Agriculture & Livelihoods -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center flex-row-reverse">
-      <div class="order-2 lg:order-1" data-aos="fade-right">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <img src="agriculture/agri1.png" alt="Agriculture 1" class="w-full h-auto aspect-video object-cover rounded-[20px] col-span-2" />
-          <img src="agriculture/agri2.png" alt="Agriculture 2" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="agriculture/agri3.png" alt="Agriculture 3" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-        </div>
-      </div>
-      <div class="order-1 lg:order-2" data-aos="fade-left">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-wide">Agriculture & Livelihoods</h2>
-        <p class="text-lg text-slate-900 mb-4">
-          We promote modern and sustainable agricultural practices by integrating science, innovation, and local knowledge.
-        </p>
-        <p class="text-lg text-slate-900">
-          Through improved techniques, resource optimization, and value-added activities, we enhance productivity, strengthen livelihoods, and create pathways for long-term income generation.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Skill & Capacity Building -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-      <div data-aos="fade-right">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-wide">Skill & Capacity Building</h2>
-        <p class="text-lg text-slate-900 mb-6">
-          We strengthen capabilities by equipping individuals with practical skills and industry-relevant knowledge. Through focused training and capacity-building initiatives, we enable people to enhance their livelihoods and build sustainable enterprises.
-        </p>
-        <ul class="text-lg text-slate-900 space-y-4 list-disc pl-5">
-          <li><strong>Handloom & Handicrafts</strong> — Preserving traditional skills while improving design, quality, and market readiness</li>
-          <li><strong>Bamboo & Artisanal Clusters</strong> — Supporting cluster-based development and value-driven production</li>
-          <li><strong>Food Processing & Enterprise Management</strong> — Enabling value addition, business skills, and compliance for market success</li>
-        </ul>
-      </div>
-      <div data-aos="fade-left">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <img src="skills/skilled1.png" alt="Skill 1" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="skills/skilled2.png" alt="Skill 2" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="skills/skilled3.png" alt="Skill 3" class="w-full h-auto aspect-video object-cover rounded-[20px] col-span-2" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Digital Inclusion -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center flex-row-reverse">
-      <div class="order-2 lg:order-1" data-aos="fade-right">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <img src="digital/digital1.png" alt="Digital Inclusion 1" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="digital/digital2.png" alt="Digital Inclusion 2" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="digital/digital3.png" alt="Digital Inclusion 3" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="digital/digital4.png" alt="Digital Inclusion 4" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-        </div>
-      </div>
-      <div class="order-1 lg:order-2" data-aos="fade-left">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-wide">Digital Inclusion</h2>
-        <p class="text-lg text-slate-900">
-          We enable individuals and communities to access the digital ecosystem through financial literacy, digital tools, and online platforms—empowering them to connect, grow, and succeed in a rapidly evolving world.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Women Empowerment -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-      <div data-aos="fade-right">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-wide">Women Empowerment</h2>
-        <h3 class="text-2xl text-brand-primary mb-6">Women are the heart of transformation and progress</h3>
-        <p class="text-lg text-slate-900">
-          We empower women and tribal communities by fostering entrepreneurship, strengthening leadership, and enabling financial independence—creating inclusive opportunities for sustainable growth.
-        </p>
-      </div>
-      <div data-aos="fade-left">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <img src="women/women1.png" alt="Women Empowerment 1" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="women/women2.png" alt="Women Empowerment 2" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="women/women3.png" alt="Women Empowerment 3" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="women/women4.png" alt="Women Empowerment 4" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Climate & Sustainability -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center flex-row-reverse">
-      <div class="order-2 lg:order-1" data-aos="fade-right">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <img src="climate/climate1.png" alt="Climate 1" class="w-full h-auto aspect-video object-cover rounded-[20px] col-span-2" />
-          <img src="climate/climate2.png" alt="Climate 2" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="climate/climate3.png" alt="Climate 3" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-        </div>
-      </div>
-      <div class="order-1 lg:order-2" data-aos="fade-left">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-wide">Climate & Sustainability</h2>
-        <p class="text-lg text-slate-900 mb-6">
-          We promote eco-friendly practices and green livelihoods by integrating sustainability into development—ensuring progress that respects nature and supports future generations.
-        </p>
-        <h3 class="text-2xl text-brand-primary">Sustainable growth begins with responsible choices.</h3>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Incubation & Support -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-      <div data-aos="fade-right">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-wide">Incubation & Support</h2>
-        <p class="text-lg text-slate-900 mb-6">
-          We nurture early-stage enterprises through incubation, mentorship, and access to resources—transforming ideas into scalable and sustainable ventures.
-        </p>
-        <h3 class="text-2xl text-brand-primary">Every idea deserves the right support to grow.</h3>
-      </div>
-      <div data-aos="fade-left">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="incubation/incubation1.png" alt="Incubation 1" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-          <img src="incubation/incubation2.png" alt="Incubation 2" class="w-full h-auto aspect-video object-cover rounded-[20px]" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Section 8: Activities -->
-<section class="py-20 md:py-20 bg-[#f0ede6]">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="mb-16" data-aos="fade-right">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-wide">
+      <h2 class="font-heading text-4xl lg:text-5xl font-bold text-text-dark mb-6 tracking-wide">
         Activities & Training
       </h2>
-      <p class="text-xl text-slate-900 max-w-3xl">
+      <p class="font-sans text-xl text-text-dark max-w-3xl mx-auto leading-relaxed mb-4">
         Our work is driven by action. Through a range of focused activities, we engage, support, and
         empower individuals and enterprises at every stage of their journey.
       </p>
-      <p class="text-xl text-slate-900 max-w-3xl mt-4">
-        We translate vision into action through structured, on-ground initiatives that create real
-        impact.
+      <p class="font-sans text-lg text-text-dark/80 max-w-2xl mx-auto">
+        We translate vision into action through structured, on-ground initiatives that create real impact.
       </p>
     </div>
+    
+    <!-- Standard Grid Layout -->
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" data-aos="fade-up">
       @for (activity of activities.slice(0, visibleActivities()); track activity) {
-        <img
-          [src]="activity"
-          [alt]="'Activity ' + ($index + 1)"
-          class="w-full h-auto rounded-[20px] hover:scale-105 transition-transform cursor-pointer"
-        />
+        <div class="relative group overflow-hidden rounded-[20px] shadow-sm hover:shadow-lg transition-all duration-300">
+          <img
+            [src]="activity"
+            [alt]="'Activity ' + ($index + 1)"
+            class="w-full aspect-[4/3] object-cover transform group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 bg-[#0D5C75]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
       }
     </div>
+    
     @if (visibleActivities() < activities.length) {
-      <div class="mt-12 text-center" data-aos="fade-up">
+      <div class="mt-16 text-center" data-aos="fade-up">
         <button
           (click)="loadMore()"
-          class="bg-brand-primary text-white shadow-md hover:shadow-lg px-8 py-3 rounded-full font-bold transition-colors"
+          class="bg-surface text-brand-primary border border-brand-primary shadow-sm hover:shadow-lg hover:bg-brand-primary hover:text-white px-10 py-4 rounded-full font-sans font-bold transition-all duration-300 tracking-wide"
         >
-          Load More
+          View More Activities
         </button>
       </div>
     }
   </div>
 </section>
+
 <!-- Section 9: Impact -->
-<section id="impact" #impactSection class="py-20 md:py-20 bg-white">
+<section id="impact" #impactSection class="py-24 bg-surface relative overflow-hidden">
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-secondary rounded-full blur-3xl -z-10 opacity-60"></div>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-wide">
+    <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+      <h2 class="font-heading text-4xl lg:text-5xl font-bold text-text-dark mb-6 tracking-wide">
         Impact
       </h2>
-      <p class="text-xl text-slate-900 mb-8">
+      <p class="font-sans text-xl text-text-dark leading-relaxed">
         Our journey is defined by measurable impact and meaningful change.
       </p>
-      <div class="flex flex-wrap justify-center gap-6">
-        @for (stat of impactStats; track stat.label) {
-          <div
-            class="bg-[#f0ede6] p-6 rounded-[20px]  w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] lg:w-64"
-          >
-            <p class="text-3xl font-normal text-brand-primary mb-2">
-              {{ stat.current().toLocaleString() }}{{ stat.suffix }}
-            </p>
-            <p class="text-sm font-bold">{{ stat.label }}</p>
-          </div>
-        }
-      </div>
     </div>
-    <div
-      class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12"
-      data-aos="fade-up"
-      data-aos-delay="200"
-    >
-      <img
-        src="impact/impact1.png"
-        alt="Impact 1"
-        class="w-full h-auto aspect-video object-cover rounded-[20px]  hover:scale-105 transition-transform"
-      />
-      <img
-        src="impact/impact2.png"
-        alt="Impact 2"
-        class="w-full h-auto aspect-video object-cover rounded-[20px]  hover:scale-105 transition-transform"
-      />
-      <img
-        src="impact/impact3.png"
-        alt="Impact 3"
-        class="w-full h-auto aspect-video object-cover rounded-[20px]  hover:scale-105 transition-transform"
-      />
-      <img
-        src="impact/impact4.png"
-        alt="Impact 4"
-        class="w-full h-auto aspect-video object-cover rounded-[20px]  hover:scale-105 transition-transform"
-      />
-      <img
-        src="impact/impact5.png"
-        alt="Impact 5"
-        class="w-full h-auto aspect-video object-cover rounded-[20px]  hover:scale-105 transition-transform"
-      />
-      <img
-        src="impact/impact6.png"
-        alt="Impact 6"
-        class="w-full h-auto aspect-video object-cover rounded-[20px]  hover:scale-105 transition-transform"
-      />
+    
+    <!-- Dashboard Style Metrics -->
+    <div class="flex flex-wrap justify-center gap-6 mb-20 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+      @for (stat of impactStats; track stat.label) {
+        <div class="bg-white border border-gray-200 shadow-sm py-8 px-6 rounded-[20px] text-center w-full sm:w-[calc(50%-1.5rem)] md:w-[calc(33.333%-1.5rem)] lg:w-[240px] hover:-translate-y-1 transition-transform duration-300">
+          <p class="font-heading text-4xl font-bold text-[#0D5C75] mb-2">
+            {{ stat.current().toLocaleString() }}{{ stat.suffix }}
+          </p>
+          <p class="font-sans text-xs font-bold text-gray-600 uppercase tracking-wider">{{ stat.label }}</p>
+        </div>
+      }
+    </div>
+    
+    <!-- Large Premium Collage -->
+    <div class="grid grid-cols-12 grid-rows-2 gap-4 h-[600px]" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-span-12 md:col-span-8 row-span-2 overflow-hidden rounded-[24px] shadow-md group">
+        <img src="impact/impact1.png" alt="Impact 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="col-span-6 md:col-span-4 row-span-1 overflow-hidden rounded-[24px] shadow-md group">
+        <img src="impact/impact2.png" alt="Impact 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="col-span-6 md:col-span-4 row-span-1 overflow-hidden rounded-[24px] shadow-md group">
+        <img src="impact/impact3.png" alt="Impact 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
     </div>
   </div>
 </section>
+
 <!-- Section 10: Achievements -->
-<section class="py-20 md:py-20 bg-[#f0ede6]">
+<section class="py-24 bg-[#E9E6DF]">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto text-center mb-12" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-wide">
+    <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+      <h2 class="font-heading text-4xl lg:text-5xl font-bold text-[#1C2438] mb-6 tracking-wide uppercase">
         Achievements
       </h2>
-      <p class="text-xl text-slate-900 mb-4">
+      <p class="font-sans text-xl text-[#1C2438] leading-relaxed mb-4">
         Our work reflects a commitment to creating real and lasting change.
       </p>
-      <p class="text-xl text-slate-900">
+      <p class="font-sans text-lg text-[#1C2438]/80 max-w-3xl mx-auto">
         From strengthening farmer producer organizations to enabling micro food enterprises, we
         continue to deliver impactful outcomes across communities.
       </p>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="200">
-      <img
-        src="achievements/achieve1.png"
-        alt="Achievement 1"
-        class="w-full h-auto aspect-video object-cover rounded-[20px] "
-      />
-      <img
-        src="achievements/achieve2.png"
-        alt="Achievement 2"
-        class="w-full h-auto aspect-video object-cover rounded-[20px] "
-      />
-      <img
-        src="achievements/achieve3.jpg"
-        alt="Achievement 3"
-        class="w-full h-auto aspect-video object-cover rounded-[20px] "
-      />
-      <img
-        src="achievements/achieve4.png"
-        alt="Achievement 4"
-        class="w-full h-auto aspect-video object-cover rounded-[20px] "
-      />
-      <img
-        src="achievements/achieve5.png"
-        alt="Achievement 5"
-        class="w-full h-auto aspect-video object-cover rounded-[20px] "
-      />
-      <img
-        src="achievements/achieve6.png"
-        alt="Achievement 6"
-        class="w-full h-auto aspect-video object-cover rounded-[20px] "
-      />
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+      <!-- Direct images with hover effects -->
+      <div class="overflow-hidden rounded-[20px] shadow-sm hover:shadow-xl transition-all duration-500 group">
+        <img src="achievements/achieve1.png" alt="Achievement 1" class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-[20px] shadow-sm hover:shadow-xl transition-all duration-500 group">
+        <img src="achievements/achieve2.png" alt="Achievement 2" class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-[20px] shadow-sm hover:shadow-xl transition-all duration-500 group">
+        <img src="achievements/achieve3.jpg" alt="Achievement 3" class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-[20px] shadow-sm hover:shadow-xl transition-all duration-500 group">
+        <img src="achievements/achieve4.png" alt="Achievement 4" class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-[20px] shadow-sm hover:shadow-xl transition-all duration-500 group">
+        <img src="achievements/achieve5.png" alt="Achievement 5" class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-[20px] shadow-sm hover:shadow-xl transition-all duration-500 group">
+        <img src="achievements/achieve6.png" alt="Achievement 6" class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
     </div>
   </div>
 </section>
+
 <!-- Section 11: Collaborations -->
-<section id="partners" class="py-20 md:py-20 bg-[#f0ede6]">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2
-      class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-wide"
-      data-aos="zoom-in"
-    >
+<section id="partners" class="py-24 bg-surface border-y border-border-color overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+    <h2 class="font-heading text-4xl lg:text-5xl font-bold text-text-dark mb-4 tracking-wide" data-aos="zoom-in">
       Collaborations
     </h2>
-    <p class="text-2xl font-bold text-slate-900 mb-4" data-aos="fade-up">
+    <p class="font-sans text-xl font-medium text-brand-primary" data-aos="fade-up">
       Our strength lies in meaningful partnerships.
     </p>
-    <p
-      class="text-lg text-slate-900 max-w-3xl mx-auto mb-12"
-      data-aos="fade-up"
-      data-aos-delay="100"
-    >
+    <p class="font-sans text-lg text-text-dark max-w-3xl mx-auto mt-4" data-aos="fade-up" data-aos-delay="100">
       By collaborating with government agencies, financial institutions, and technology partners, we
       create a strong ecosystem that drives impact at scale.
     </p>
-    <div
-      class="relative w-full overflow-hidden marquee-container mt-12 py-8 bg-[#f0ede6]/50 rounded-[20px]"
-      data-aos="zoom-in"
-      data-aos-delay="300"
-    >
-      <div
-        class="flex animate-[marquee_30s_linear_infinite] whitespace-nowrap w-max hover:[animation-play-state:paused]"
-      >
-        <!-- Group 1 -->
-        <div class="flex items-center justify-between gap-8 md:gap-16 px-8 min-w-full">
-          <img
-            src="partners/DOI&C.png"
-            alt="Directorate of Industries & Commerce"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/TSIC.png"
-            alt="Tripura Small Industries Corporation"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/ilogitron.png"
-            alt="iLogitron Technology"
-            class="h-20 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/MSME.png"
-            alt="MSME"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/PMFME.png"
-            alt="PMFME"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/arbaroem.png"
-            alt="Arbaroem"
-            class="h-20 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/govt.png"
-            alt="Govt"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/tidc.png"
-            alt="TIDC"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/tripura_tourism.png"
-            alt="Tripura Tourism"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/union bank.png"
-            alt="Union Bank"
-            class="h-16 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/abedin.png"
-            alt="Abedin"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-        </div>
-        <!-- Group 2 (duplicate for seamless loop) -->
-        <div class="flex items-center justify-between gap-8 md:gap-16 px-8 min-w-full">
-          <img
-            src="partners/DOI&C.png"
-            alt="Directorate of Industries & Commerce"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/TSIC.png"
-            alt="Tripura Small Industries Corporation"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/ilogitron.png"
-            alt="iLogitron Technology"
-            class="h-20 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/MSME.png"
-            alt="MSME"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/PMFME.png"
-            alt="PMFME"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/arbaroem.png"
-            alt="Arbaroem"
-            class="h-20 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/govt.png"
-            alt="Govt"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/tidc.png"
-            alt="TIDC"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/tripura_tourism.png"
-            alt="Tripura Tourism"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/union bank.png"
-            alt="Union Bank"
-            class="h-16 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-          <img
-            src="partners/abedin.png"
-            alt="Abedin"
-            class="h-24 object-contain opacity-100 hover:scale-110 transition-transform"
-          />
-        </div>
+  </div>
+  
+  <div class="relative w-full overflow-hidden marquee-container mt-12 py-10" data-aos="fade-up">
+    <!-- Gradient Masks for smooth fading -->
+    <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-surface to-transparent z-10"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-surface to-transparent z-10"></div>
+    
+    <div class="flex animate-[marquee_40s_linear_infinite] whitespace-nowrap w-max hover:[animation-play-state:paused] items-center">
+      <!-- Group 1 -->
+      <div class="flex items-center justify-between gap-16 px-16 min-w-full">
+        <img src="partners/DOI&C.png" alt="Partner 1" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/TSIC.png" alt="Partner 2" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/ilogitron.png" alt="Partner 3" class="h-12 lg:h-16 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/MSME.png" alt="Partner 4" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/PMFME.png" alt="Partner 5" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/arbaroem.png" alt="Partner 6" class="h-12 lg:h-16 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/govt.png" alt="Partner 7" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/tidc.png" alt="Partner 8" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/tripura_tourism.png" alt="Partner 9" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/union bank.png" alt="Partner 10" class="h-10 lg:h-12 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/abedin.png" alt="Partner 11" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+      </div>
+      <!-- Group 2 -->
+      <div class="flex items-center justify-between gap-16 px-16 min-w-full">
+        <img src="partners/DOI&C.png" alt="Partner 1" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/TSIC.png" alt="Partner 2" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/ilogitron.png" alt="Partner 3" class="h-12 lg:h-16 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/MSME.png" alt="Partner 4" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/PMFME.png" alt="Partner 5" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/arbaroem.png" alt="Partner 6" class="h-12 lg:h-16 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/govt.png" alt="Partner 7" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/tidc.png" alt="Partner 8" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/tripura_tourism.png" alt="Partner 9" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/union bank.png" alt="Partner 10" class="h-10 lg:h-12 object-contain transition-all duration-500 hover:scale-110" />
+        <img src="partners/abedin.png" alt="Partner 11" class="h-16 lg:h-20 object-contain transition-all duration-500 hover:scale-110" />
       </div>
     </div>
   </div>
 </section>
+
 <!-- Section 12: Leadership -->
-<section class="py-20 md:py-20 bg-[#f0ede6] relative">
+<section class="py-24 bg-brand-secondary relative">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-wide">
+    <div class="text-center mb-20" data-aos="fade-up">
+      <h2 class="font-heading text-4xl lg:text-5xl font-bold text-text-dark tracking-wide uppercase">
         Leadership
       </h2>
     </div>
-    <div class="grid md:grid-cols-3 gap-8 md:gap-12">
-      <!-- Shri Mojammil Abedin -->
-      <div
-        class="bg-white rounded-[20px] p-8 relative overflow-hidden "
-        data-aos="fade-up"
-        data-aos-delay="300"
-      >
-        <img
-          src="leadership/moja.png"
-          alt="Shri Mojammil Abedin"
-          class="w-full h-auto aspect-video object-cover rounded-[16px] mb-6 "
-        />
-        <h3 class="text-xl font-bold text-slate-900 mb-4">
-          "Our vision is to drive meaningful change by enabling skills, supporting enterprises, and
-          building sustainable growth."
-        </h3>
-        <p class="text-xl text-brand-primary">Shri Mojammil Abedin</p>
-        <p class="font-bold text-brand-primary">CEO</p>
+    
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Profile 1 -->
+      <div class="bg-surface rounded-[24px] border border-border-color p-8 relative flex flex-col h-full shadow-sm hover:shadow-xl transition-all duration-500 group" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-full aspect-[3/2] overflow-hidden rounded-[16px] mb-8">
+          <img src="leadership/moja.png" alt="Shri Mojammil Abedin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div class="flex-grow">
+          <h3 class="font-serif text-xl italic text-text-dark mb-8 leading-relaxed">
+            "Our vision is to drive meaningful change by enabling skills, supporting enterprises, and
+            building sustainable growth."
+          </h3>
+        </div>
+        <div class="border-t border-border-color pt-6 mt-auto">
+          <p class="font-heading text-xl font-bold text-text-dark">Shri Mojammil Abedin</p>
+          <p class="font-sans text-brand-primary font-medium tracking-wide text-sm uppercase mt-1">CEO</p>
+        </div>
       </div>
-      <!-- Shri Abhishek Dhar -->
-      <div
-        class="bg-white rounded-[20px] p-8 relative overflow-hidden "
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
-        <img
-          src="leadership/abhi.png"
-          alt="Shri Abhishek Dhar"
-          class="w-full h-auto aspect-video object-cover rounded-[16px] mb-6 "
-        />
-        <h3 class="text-xl font-bold text-slate-900 mb-4">
-          "We believe in creating opportunities that empower individuals to grow, succeed, and build
-          a better future."
-        </h3>
-        <p class="text-xl text-brand-primary">Shri Abhishek Dhar</p>
-        <p class="font-bold text-brand-primary">Partner</p>
+      
+      <!-- Profile 2 -->
+      <div class="bg-surface rounded-[24px] border border-border-color p-8 relative flex flex-col h-full shadow-sm hover:shadow-xl transition-all duration-500 group" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-full aspect-[3/2] overflow-hidden rounded-[16px] mb-8">
+          <img src="leadership/abhi.png" alt="Shri Abhishek Dhar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div class="flex-grow">
+          <h3 class="font-serif text-xl italic text-text-dark mb-8 leading-relaxed">
+            "We believe in creating opportunities that empower individuals to grow, succeed, and build
+            a better future."
+          </h3>
+        </div>
+        <div class="border-t border-border-color pt-6 mt-auto">
+          <p class="font-heading text-xl font-bold text-text-dark">Shri Abhishek Dhar</p>
+          <p class="font-sans text-brand-primary font-medium tracking-wide text-sm uppercase mt-1">Partner</p>
+        </div>
       </div>
-      <!-- Shri Rajib Deb -->
-      <div
-        class="bg-white rounded-[20px] p-8 relative overflow-hidden "
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <img
-          src="leadership/rajib.png"
-          alt="Shri Rajib Deb"
-          class="w-full h-auto aspect-video object-cover rounded-[16px] mb-6 "
-        />
-        <h3 class="text-xl font-bold text-slate-900 mb-4">
-          "Every transformation begins with a single step—a decision to grow, to rise, and to create
-          change."
-        </h3>
-        <p class="text-xl text-brand-primary">Shri Rajib Deb</p>
-        <p class="font-bold text-brand-primary">Managing Partner</p>
+      
+      <!-- Profile 3 -->
+      <div class="bg-surface rounded-[24px] border border-border-color p-8 relative flex flex-col h-full shadow-sm hover:shadow-xl transition-all duration-500 group" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-full aspect-[3/2] overflow-hidden rounded-[16px] mb-8">
+          <img src="leadership/rajib.png" alt="Shri Rajib Deb" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div class="flex-grow">
+          <h3 class="font-serif text-xl italic text-text-dark mb-8 leading-relaxed">
+            "Every transformation begins with a single step—a decision to grow, to rise, and to create
+            change."
+          </h3>
+        </div>
+        <div class="border-t border-border-color pt-6 mt-auto">
+          <p class="font-heading text-xl font-bold text-text-dark">Shri Rajib Deb</p>
+          <p class="font-sans text-brand-primary font-medium tracking-wide text-sm uppercase mt-1">Managing Partner</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 <!-- Section 13: Our Strength -->
-<section class="py-20 md:py-20 bg-white">
+<section class="py-24 bg-surface">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-wide">
+    <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+      <h2 class="font-heading text-4xl lg:text-5xl font-bold text-text-dark mb-6 tracking-wide">
         Our Strength
       </h2>
-      <p class="text-xl text-slate-900 mb-8">
+      <p class="font-sans text-xl text-text-dark leading-relaxed">
         What sets us apart is our ability to create meaningful and lasting impact through a holistic
         and people-centric approach.
       </p>
-      <div class="grid md:grid-cols-2 gap-6 text-left">
-        <div class="bg-[#f0ede6] p-6 rounded-[20px] ">
-          <strong class="block text-brand-primary mb-2 text-xl">End-to-End Support</strong> From idea
-          to execution, we guide every stage of growth
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="bg-bg-alternate p-8 rounded-[24px] border border-border-color hover:-translate-y-2 transition-transform duration-300">
+        <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-6 shadow-sm">
+          <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
         </div>
-        <div class="bg-[#f0ede6] p-6 rounded-[20px] ">
-          <strong class="block text-brand-primary mb-2 text-xl">Strong Ground Presence</strong> Deep
-          engagement and understanding of real-world needs
+        <h4 class="font-heading font-bold text-xl text-text-dark mb-3">End-to-End Support</h4>
+        <p class="font-sans text-text-dark/80">From idea to execution, we guide every stage of growth</p>
+      </div>
+      <div class="bg-bg-alternate p-8 rounded-[24px] border border-border-color hover:-translate-y-2 transition-transform duration-300">
+        <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-6 shadow-sm">
+          <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
         </div>
-        <div class="bg-[#f0ede6] p-6 rounded-[20px] ">
-          <strong class="block text-brand-primary mb-2 text-xl">Technology-Driven</strong> Leveraging
-          digital tools for efficiency and scale
+        <h4 class="font-heading font-bold text-xl text-text-dark mb-3">Strong Ground Presence</h4>
+        <p class="font-sans text-text-dark/80">Deep engagement and understanding of real-world needs</p>
+      </div>
+      <div class="bg-bg-alternate p-8 rounded-[24px] border border-border-color hover:-translate-y-2 transition-transform duration-300">
+        <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-6 shadow-sm">
+          <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
         </div>
-        <div class="bg-[#f0ede6] p-6 rounded-[20px] ">
-          <strong class="block text-brand-primary mb-2 text-xl">Community-Centric</strong> Building
-          solutions that are inclusive and sustainable
+        <h4 class="font-heading font-bold text-xl text-text-dark mb-3">Technology-Driven</h4>
+        <p class="font-sans text-text-dark/80">Leveraging digital tools for efficiency and scale</p>
+      </div>
+      <div class="bg-bg-alternate p-8 rounded-[24px] border border-border-color hover:-translate-y-2 transition-transform duration-300">
+        <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-6 shadow-sm">
+          <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
         </div>
+        <h4 class="font-heading font-bold text-xl text-text-dark mb-3">Community-Centric</h4>
+        <p class="font-sans text-text-dark/80">Building solutions that are inclusive and sustainable</p>
       </div>
     </div>
-    <div
-      class="grid md:grid-cols-2 gap-8 mt-16 max-w-5xl mx-auto"
-      data-aos="fade-up"
-      data-aos-delay="200"
-    >
-      <img
-        src="strength/strength1.png"
-        alt="Strength 1"
-        class="w-full h-auto rounded-[20px]  aspect-video object-cover hover:scale-105 transition-transform"
-      />
-      <img
-        src="strength/strength2.png"
-        alt="Strength 2"
-        class="w-full h-auto rounded-[20px]  aspect-video object-cover hover:scale-105 transition-transform"
-      />
+    
+    <div class="grid md:grid-cols-2 gap-8 mt-16 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+      <img src="strength/strength1.png" alt="Strength 1" class="w-full rounded-[24px] aspect-[16/7] object-cover hover:scale-[1.02] transition-transform duration-500 shadow-md" />
+      <img src="strength/strength2.png" alt="Strength 2" class="w-full rounded-[24px] aspect-[16/7] object-cover hover:scale-[1.02] transition-transform duration-500 shadow-md" />
     </div>
   </div>
 </section>
+
 <!-- Section 14: The Future -->
-<section class="py-20 md:py-20 bg-ember-orange text-white shadow-md hover:shadow-lg">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="py-32 bg-gradient-to-br from-brand-primary to-[#08495C] text-white relative overflow-hidden">
+  <!-- Subtle decorative pattern -->
+  <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-wide">The Future</h2>
-      <p class="text-2xl mb-8 leading-relaxed">
+      <h2 class="font-heading text-4xl lg:text-6xl font-bold mb-10 tracking-wide text-brand-secondary">
+        The Future
+      </h2>
+      <p class="font-sans text-2xl lg:text-3xl mb-12 leading-relaxed text-white/90">
         We are committed to building pathways that empower individuals, strengthen enterprises, and
         create lasting impact for generations to come.
       </p>
-      <p class="text-2xl font-bold mb-12">
+      <p class="font-heading text-xl lg:text-2xl font-bold text-brand-accent tracking-wide uppercase">
         The future is driven by innovation, sustainability, and entrepreneurship.
       </p>
     </div>
-    <div class="grid md:grid-cols-2 gap-8 mt-12" data-aos="fade-up" data-aos-delay="200">
-      <img
-        src="future/future1.png"
-        alt="Future 1"
-        class="w-full h-auto rounded-[20px]  aspect-[4/3] object-cover hover:scale-105 transition-transform"
-      />
-      <img
-        src="future/future2.png"
-        alt="Future 2"
-        class="w-full h-auto rounded-[20px]  aspect-[4/3] object-cover hover:scale-105 transition-transform"
-      />
+    
+    <div class="grid md:grid-cols-2 gap-8 mt-20 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+      <div class="overflow-hidden rounded-[24px] shadow-2xl group">
+        <img src="future/future1.png" alt="Future 1" class="w-full aspect-video object-cover group-hover:scale-110 transition-transform duration-700 opacity-90 group-hover:opacity-100" />
+      </div>
+      <div class="overflow-hidden rounded-[24px] shadow-2xl group">
+        <img src="future/future2.png" alt="Future 2" class="w-full aspect-video object-cover group-hover:scale-110 transition-transform duration-700 opacity-90 group-hover:opacity-100" />
+      </div>
     </div>
   </div>
 </section>

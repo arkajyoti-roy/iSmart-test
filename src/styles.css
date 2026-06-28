@@ -14,12 +14,17 @@ html, body {
   --color-blue-slate: #475569;
   --color-silver: #cbd5e1;
   --color-white: #ffffff;
-  --color-brand-primary: #0d5c75;
-  --color-brand-secondary: #d97706;
-  --color-brand-accent: #fbbf24;
+  --color-brand-primary: #0D5C75;
+  --color-brand-secondary: #F8F6F2;
+  --color-surface: #FFFFFF;
+  --color-bg-alternate: #E9E6DF;
+  --color-text-dark: #1C2438;
+  --color-brand-accent: #C9A227;
+  --color-success: #4D7C59;
+  --color-border-color: #E5E7EB;
 
   --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
 
   --animate-marquee: marquee 30s linear infinite;
   --animate-fade-in-up: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
