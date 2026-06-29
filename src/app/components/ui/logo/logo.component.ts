@@ -7,10 +7,17 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <div class="flex flex-col items-start leading-none group cursor-pointer" [ngClass]="containerClass">
-      <!-- Chevron Icon -->
-      <svg [attr.width]="iconWidth" [attr.height]="iconHeight" viewBox="0 0 40 24" class="text-brand-accent mb-1 transform group-hover:-translate-y-1 transition-transform duration-300 ml-1" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter">
-        <polyline points="4 20 20 4 36 20"></polyline>
-      </svg>
+      <!-- Yellow Arrow Icon Wrapper -->
+      <div class="relative w-full mb-0" [style.height.px]="arrowHeight">
+        <img 
+          src="/logo/iarrow.png" 
+          alt="iSmart Logo Symbol" 
+          [style.width.px]="arrowWidth" 
+          [style.height.px]="arrowHeight" 
+          [style.left]="arrowCenterOffset"
+          class="absolute top-[3px] -translate-x-1/2 group-hover:-translate-y-1 transition-transform duration-300 object-contain"
+        />
+      </div>
       <!-- Text -->
       <div class="flex flex-col">
         <div class="flex items-baseline gap-1.5">
@@ -27,24 +34,28 @@ export class LogoComponent {
   @Input() size: 'sm' | 'md' | 'lg' = 'md';
   @Input() containerClass: string = '';
 
-  get iconWidth(): string {
-    switch(this.size) {
-      case 'sm': return '24';
-      case 'lg': return '40';
-      default: return '32';
+  get arrowWidth(): number {
+    switch (this.size) {
+      case 'sm': return 32;
+      case 'lg': return 60;
+      default: return 46;
     }
   }
 
-  get iconHeight(): string {
-    switch(this.size) {
-      case 'sm': return '16';
-      case 'lg': return '28';
-      default: return '20';
+  get arrowHeight(): number {
+    return this.arrowWidth;
+  }
+
+  get arrowCenterOffset(): string {
+    switch (this.size) {
+      case 'sm': return '0.125rem';
+      case 'lg': return '0.22rem';
+      default: return '0.17rem';
     }
   }
 
   get textSize(): string {
-    switch(this.size) {
+    switch (this.size) {
       case 'sm': return '1.125rem'; // text-lg
       case 'lg': return '1.875rem'; // text-3xl
       default: return '1.5rem'; // text-2xl
@@ -52,7 +63,7 @@ export class LogoComponent {
   }
 
   get solutionsPadding(): string {
-    switch(this.size) {
+    switch (this.size) {
       case 'sm': return '3.5rem';
       case 'lg': return '5.5rem';
       default: return '4.2rem';

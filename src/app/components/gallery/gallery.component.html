@@ -58,45 +58,34 @@
         @for (img of images(); track img.id; let idx = $index) {
           <div 
             (click)="openLightbox(idx)"
-            class="bg-bg-alternate p-6 rounded-[24px] border border-border-color shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-500 cursor-pointer group flex flex-col justify-between"
+            class="relative overflow-hidden rounded-xl border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-555 cursor-pointer group flex flex-col bg-slate-50"
             data-aos="fade-up"
           >
-            <!-- Top: Image & Overlay -->
-            <div>
-              <!-- Image Frame -->
-              <div class="relative overflow-hidden rounded-[16px] aspect-[4/3] bg-surface mb-5">
-                <img 
-                  [src]="img.image_path" 
-                  [alt]="img.title || 'Portfolio Image'" 
-                  loading="lazy"
-                  class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
-                />
-                <!-- Dark Overlay on Hover -->
-                <div class="absolute inset-0 bg-[#08495C]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div class="w-14 h-14 bg-white/95 shadow-lg text-brand-primary rounded-full flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform duration-300">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.637 10.637z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Metadata -->
-              @if (img.title) {
-                <h3 class="text-xl font-heading font-bold text-text-dark mb-2 group-hover:text-brand-primary transition-colors">
-                  {{ img.title }}
-                </h3>
-              }
+            <!-- Image Frame (Force Uniform Aspect Ratio) -->
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+              <img 
+                [src]="img.image_path" 
+                [alt]="img.title || 'Portfolio Image' | titlecase" 
+                loading="lazy"
+                class="w-full h-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+              />
             </div>
-
-            <!-- Bottom: Description -->
-            @if (img.description) {
-              <div class="mt-2">
-                <p class="text-base font-sans text-text-dark/80 leading-relaxed line-clamp-3">
-                  {{ img.description }}
+            
+            <!-- Sleek Corner Overlay with Metadata -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <!-- Short Corner Box -->
+              <div class="bg-slate-950/75 backdrop-blur-md border border-white/10 p-2.5 rounded-lg text-white max-w-[80%] transform translate-y-3 group-hover:translate-y-0 transition-transform duration-350 ease-out">
+                <span class="text-[9px] font-extrabold uppercase tracking-widest text-brand-accent mb-0.5 block">
+                  Showcase
+                </span>
+                <h3 class="text-xs font-heading font-extrabold tracking-wide uppercase leading-tight line-clamp-1">
+                  {{ img.title || 'Featured Project' }}
+                </h3>
+                <p class="text-[10px] text-slate-200 leading-snug line-clamp-2 mt-0.5 opacity-90 font-medium">
+                  {{ img.description || 'An initiative supported by iSmart Lifestyle Solutions.' }}
                 </p>
               </div>
-            }
+            </div>
           </div>
         }
       </div>
@@ -120,17 +109,18 @@
 <!-- LIGHTBOX MODAL -->
 @if (activeImageIndex() !== null) {
   <div 
-    class="fixed inset-0 z-50 flex flex-col justify-between bg-text-dark/95 backdrop-blur-md text-white p-4 select-none animate-[fade-in_0.3s_ease-out]"
+    class="fixed inset-0 z-50 flex flex-col justify-between bg-white/35 backdrop-blur-3xl text-slate-850 p-4 select-none animate-[fade-in_0.3s_ease-out] overflow-hidden"
     (click)="closeLightbox()"
+    (wheel)="handleWheel($event)"
   >
     <!-- Top Action Bar -->
     <div class="flex justify-between items-center h-16 px-4 md:px-8 relative z-20">
-      <div class="text-xs md:text-sm font-semibold tracking-wider text-slate-400">
+      <div class="text-xs md:text-sm font-bold tracking-wider text-slate-700">
         {{ activeImageIndex()! + 1 }} / {{ images().length }}
       </div>
       <button 
         (click)="closeLightbox()"
-        class="w-10 h-10 bg-white/10 hover:bg-white/20 border border-white/10 rounded-full flex items-center justify-center text-white transition-all transform hover:scale-105 active:scale-95 focus:outline-none"
+        class="w-10 h-10 bg-slate-100/80 hover:bg-slate-200 border border-slate-200/60 rounded-full flex items-center justify-center text-slate-700 hover:text-slate-900 transition-all transform hover:scale-105 active:scale-95 focus:outline-none cursor-pointer shadow-sm"
         aria-label="Close lightbox"
       >
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -145,7 +135,7 @@
       <!-- Prev Arrow -->
       <button 
         (click)="prevImage($event)"
-        class="w-12 h-12 md:w-14 md:h-14 bg-white/5 hover:bg-white/15 border border-white/5 hover:border-white/10 rounded-full flex items-center justify-center text-slate-300 hover:text-white transition-all transform hover:scale-105 active:scale-95 focus:outline-none z-20"
+        class="w-12 h-12 md:w-14 md:h-14 bg-slate-100/65 hover:bg-slate-200/80 border border-slate-200/50 rounded-full flex items-center justify-center text-slate-600 hover:text-slate-950 transition-all transform hover:scale-105 active:scale-95 focus:outline-none z-20 cursor-pointer shadow-sm"
         aria-label="Previous image"
       >
         <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -153,22 +143,25 @@
         </svg>
       </button>
 
-      <!-- Main Image Viewframe -->
+      <!-- Main Image Viewframe (Force Uniform Aspect Ratio & Size) -->
       <div 
-        class="max-w-4xl max-h-[70vh] flex items-center justify-center mx-4 relative z-10"
+        class="w-full max-w-[85vw] xl:max-w-[1200px] aspect-[16/10] max-h-[72vh] flex items-center justify-center mx-4 relative z-10 overflow-hidden rounded-xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.15)] border border-slate-200/40 bg-slate-100"
         (click)="$event.stopPropagation()"
       >
         <img 
           [src]="images()[activeImageIndex()!].image_path" 
           [alt]="images()[activeImageIndex()!].title || 'Full View'"
-          class="max-w-full max-h-[70vh] object-contain rounded-2xl shadow-2xl border border-white/10 animate-[zoom-in-up_0.4s_cubic-bezier(0.16,1,0.3,1)]"
+          (click)="toggleZoom($event)"
+          [style.transform]="'scale(' + zoomScale() + ')'"
+          [style.cursor]="isZoomed() ? 'zoom-out' : 'zoom-in'"
+          class="w-full h-full object-cover transition-transform duration-200 ease-out origin-center"
         />
       </div>
 
       <!-- Next Arrow -->
       <button 
         (click)="nextImage($event)"
-        class="w-12 h-12 md:w-14 md:h-14 bg-white/5 hover:bg-white/15 border border-white/5 hover:border-white/10 rounded-full flex items-center justify-center text-slate-300 hover:text-white transition-all transform hover:scale-105 active:scale-95 focus:outline-none z-20"
+        class="w-12 h-12 md:w-14 md:h-14 bg-slate-100/65 hover:bg-slate-200/80 border border-slate-200/50 rounded-full flex items-center justify-center text-slate-600 hover:text-slate-950 transition-all transform hover:scale-105 active:scale-95 focus:outline-none z-20 cursor-pointer shadow-sm"
         aria-label="Next image"
       >
         <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -179,19 +172,15 @@
 
     <!-- Bottom Description Bar -->
     <div 
-      class="w-full max-w-3xl mx-auto px-6 py-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl text-center mb-8 relative z-20 animate-[fade-in-up_0.4s_ease-out]"
+      class="w-full max-w-3xl mx-auto px-6 py-5 bg-white/70 backdrop-blur-md border border-slate-200/60 shadow-sm rounded-xl text-center mb-8 relative z-20 animate-[fade-in-up_0.4s_ease-out]"
       (click)="$event.stopPropagation()"
     >
-      @if (images()[activeImageIndex()!].title) {
-        <h4 class="text-lg md:text-xl font-heading font-bold text-white mb-2">
-          {{ images()[activeImageIndex()!].title }}
-        </h4>
-      }
-      @if (images()[activeImageIndex()!].description) {
-        <p class="text-sm text-slate-300 leading-relaxed max-w-2xl mx-auto">
-          {{ images()[activeImageIndex()!].description }}
-        </p>
-      }
+      <h4 class="text-base md:text-lg font-heading font-extrabold text-slate-800 mb-1.5">
+        {{ images()[activeImageIndex()!].title || 'Featured Showcase Project' }}
+      </h4>
+      <p class="text-xs md:text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto font-medium">
+        {{ images()[activeImageIndex()!].description || 'Discover this local initiative supported by iSmart Lifestyle Solutions.' }}
+      </p>
     </div>
   </div>
 }
