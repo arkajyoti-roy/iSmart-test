@@ -24,6 +24,10 @@ export class GalleryComponent implements OnInit {
   protected readonly images = signal<GalleryImage[]>([]);
   protected readonly isLoading = signal(true);
   protected readonly activeImageIndex = signal<number | null>(null);
+  
+  // Interactive zoom & scroll state signals
+  protected readonly isZoomed = signal(false);
+  protected readonly zoomScale = signal(1.0);
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
@@ -39,7 +43,7 @@ export class GalleryComponent implements OnInit {
 
   fetchImages() {
     this.isLoading.set(true);
-    this.http.get<{ success: boolean; data: any[] }>(`${environment.apiUrl}/gallery`).subscribe({
+    this.http.get<{ success: boolean; data: any[] }>('http://192.168.1.57:8004/api/gallery').subscribe({
       next: (res) => {
         // Only show active and sorted by sort_order
         const sorted = (res.data || [])
@@ -67,10 +71,12 @@ export class GalleryComponent implements OnInit {
 
   openLightbox(index: number) {
     this.activeImageIndex.set(index);
+    this.resetZoom();
   }
 
   closeLightbox() {
     this.activeImageIndex.set(null);
+    this.resetZoom();
   }
 
   nextImage(event?: Event) {
@@ -79,6 +85,7 @@ export class GalleryComponent implements OnInit {
     if (index === null) return;
     const nextIdx = (index + 1) % this.images().length;
     this.activeImageIndex.set(nextIdx);
+    this.resetZoom();
   }
 
   prevImage(event?: Event) {
@@ -87,6 +94,46 @@ export class GalleryComponent implements OnInit {
     if (index === null) return;
     const prevIdx = (index - 1 + this.images().length) % this.images().length;
     this.activeImageIndex.set(prevIdx);
+    this.resetZoom();
+  }
+
+  resetZoom() {
+    this.isZoomed.set(false);
+    this.zoomScale.set(1.0);
+  }
+
+  toggleZoom(event: MouseEvent) {
+    event.stopPropagation();
+    if (this.isZoomed()) {
+      this.resetZoom();
+    } else {
+      this.isZoomed.set(true);
+      this.zoomScale.set(2.0); // Default click zoom level
+    }
+  }
+
+  handleWheel(event: WheelEvent) {
+    event.preventDefault();
+    if (this.isZoomed()) {
+      // scrolling in zoom mode updates scale factor
+      let currentScale = this.zoomScale();
+      if (event.deltaY > 0) {
+        currentScale = Math.max(1.0, currentScale - 0.25);
+      } else {
+        currentScale = Math.min(6.0, currentScale + 0.25);
+      }
+      this.zoomScale.set(currentScale);
+      if (currentScale <= 1.0) {
+        this.isZoomed.set(false);
+      }
+    } else {
+      // scrolling in normal mode switches images
+      if (event.deltaY > 0) {
+        this.nextImage();
+      } else {
+        this.prevImage();
+      }
+    }
   }
 
   @HostListener('document:keydown', ['$event'])
